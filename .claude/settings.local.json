@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(cmd:*)",
+      "Bash(node:*)"
+    ]
+  },
+  "outputStyle": "default"
+}
