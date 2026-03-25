@@ -15,7 +15,11 @@
       "mcp__neon__describe_table_schema",
       "mcp__neon__run_sql_transaction",
       "Bash(npx shadcn@latest add calendar popover card --yes)",
-      "mcp__neon__run_sql"
+      "mcp__neon__run_sql",
+      "Bash(git checkout:*)",
+      "Bash(git merge:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
