@@ -2,26 +2,39 @@
 
 ## Component Library
 
-**Only shadcn/ui components may be used for UI in this project.**
+**ONLY shadcn/ui components may be used for UI in this project. ABSOLUTELY NO custom components.**
 
-- Do NOT create custom UI components (buttons, inputs, cards, modals, badges, etc.)
-- Do NOT use any other component library (MUI, Chakra, Radix directly, etc.)
+- Do NOT create custom UI components of any kind — no buttons, inputs, cards, modals, badges, tables, dialogs, dropdowns, or any other UI element
+- Do NOT use any other component library (MUI, Chakra, Radix directly, Headless UI, etc.)
+- Do NOT build UI primitives from scratch using raw HTML elements styled with Tailwind
 - All UI must be composed exclusively from shadcn/ui components
-- If a shadcn/ui component does not exist for a use case, use the closest available component and compose with it — do not build from scratch
+- If a shadcn/ui component does not exist for a specific use case, compose the closest available shadcn/ui components together — never build from scratch
 
 ### Adding shadcn/ui Components
+
+Before writing any UI, check whether the required shadcn/ui component has already been added to the project under `src/components/ui/`. If it hasn't, add it:
 
 ```bash
 npx shadcn@latest add <component-name>
 ```
 
-Components are added to `src/components/ui/`. Do not modify these generated files.
+Components are installed to `src/components/ui/`. Do not modify these generated files.
+
+### Examples
+
+| Need | Do | Do NOT |
+|------|----|--------|
+| A button | `<Button>` from shadcn/ui | `<button className="...">` |
+| A text input | `<Input>` from shadcn/ui | `<input className="...">` |
+| A container/panel | `<Card>` from shadcn/ui | `<div className="rounded-lg border ...">` |
+| A dropdown | `<DropdownMenu>` from shadcn/ui | Custom dropdown built with `useState` + absolute positioning |
+| A modal | `<Dialog>` from shadcn/ui | Custom overlay built from scratch |
 
 ---
 
 ## Date Formatting
 
-All dates must be formatted using **date-fns**.
+All dates must be formatted using **date-fns**. No exceptions.
 
 ### Required Format
 
@@ -53,4 +66,4 @@ function formatDate(date: Date | string): string {
 }
 ```
 
-Use this utility wherever dates are displayed. Do not use `toLocaleDateString`, `Intl.DateTimeFormat`, or any other date formatting method.
+Use this utility wherever dates are displayed. Do NOT use `toLocaleDateString`, `Intl.DateTimeFormat`, `.toString()`, or any other date formatting method.
