@@ -8,6 +8,8 @@ Before generating any code, **always read the relevant file(s) in the `/docs` di
 
 - /docs/ui.md
 - /docs/data-fetching.md
+- /docs/data-mutations.md
+- /docs/auth.md
 
 ## Commands
 
