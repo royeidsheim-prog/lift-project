@@ -19,7 +19,10 @@
       "Bash(git checkout:*)",
       "Bash(git merge:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(npx shadcn@latest add input label select --yes)",
+      "Bash(git:*)",
+      "Bash(echo \"status: $?\")"
     ]
   },
   "enableAllProjectMcpServers": true,
