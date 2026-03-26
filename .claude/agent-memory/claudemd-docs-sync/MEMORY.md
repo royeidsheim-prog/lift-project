@@ -1,0 +1,1 @@
+- [project_claudemd_structure.md](./project_claudemd_structure.md) — Section header, bullet format, and append-order convention for /docs list in CLAUDE.md
