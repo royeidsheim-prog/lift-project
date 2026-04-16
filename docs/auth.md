@@ -17,9 +17,9 @@
 
 ---
 
-## Middleware (`src/proxy.ts`)
+## Middleware (`src/middleware.ts`)
 
-Clerk middleware runs on every request via `src/proxy.ts` (this project uses `proxy.ts`, not `middleware.ts`).
+Clerk middleware runs on every request via `src/middleware.ts`.
 
 The current setup:
 

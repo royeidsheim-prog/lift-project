@@ -22,7 +22,8 @@
       "Bash(git commit:*)",
       "Bash(npx shadcn@latest add input label select --yes)",
       "Bash(git:*)",
-      "Bash(echo \"status: $?\")"
+      "Bash(echo \"status: $?\")",
+      "Bash(npm run *)"
     ]
   },
   "enableAllProjectMcpServers": true,
