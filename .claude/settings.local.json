@@ -23,7 +23,8 @@
       "Bash(npx shadcn@latest add input label select --yes)",
       "Bash(git:*)",
       "Bash(echo \"status: $?\")",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(npx vercel *)"
     ]
   },
   "enableAllProjectMcpServers": true,
